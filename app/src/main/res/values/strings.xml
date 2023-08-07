@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">primeiroaplicativo</string>
+    <string name="cafe_coado">Cafe Coado</string>
+    <string name="r_20">R$ 20</string>
+</resources>
