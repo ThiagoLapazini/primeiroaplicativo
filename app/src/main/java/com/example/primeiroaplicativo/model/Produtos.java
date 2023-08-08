@@ -34,4 +34,6 @@ public class Produtos {
     public void setImagemProduto(int imagemProduto) {
         this.imagemProduto = imagemProduto;
     }
+
+
 }

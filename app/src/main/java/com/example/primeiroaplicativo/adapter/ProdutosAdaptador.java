@@ -23,17 +23,17 @@ public class ProdutosAdaptador extends ArrayAdapter<Produtos> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        View listitemView = convertView;
-        if (listitemView == null) {
-            listitemView = LayoutInflater.from(getContext()).inflate(R.layout.produtos_layout, parent, false);
+        View listItemView = convertView;
+        if (listItemView == null) {
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.produtos_layout, parent, false);
         }
         Produtos produtos = getItem(position);
-        TextView courseTV = listitemView.findViewById(R.id.nome_produto);
-        courseTV.setText(produtos.getNomeProduto());
-        courseTV = listitemView.findViewById(R.id.valor_produto);
-        courseTV.setText(produtos.getPrecoProduto());
-        ImageView courseIV = listitemView.findViewById(R.id.grid_imagem);
-        courseIV.setImageResource(produtos.getImagemProduto());
-        return listitemView;
+        TextView viewDeTexto = listItemView.findViewById(R.id.nome_produto);
+        viewDeTexto.setText(produtos.getNomeProduto());
+        viewDeTexto = listItemView.findViewById(R.id.valor_produto);
+        viewDeTexto.setText(produtos.getPrecoProduto());
+        ImageView viewDeImagem = listItemView.findViewById(R.id.grid_imagem);
+        viewDeImagem.setImageResource(produtos.getImagemProduto());
+        return listItemView;
     }
 }
